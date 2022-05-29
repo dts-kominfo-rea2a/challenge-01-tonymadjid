@@ -44,17 +44,43 @@ arrPet[0] = "Yes";
 arrPet.push("No");
 
 // education
-const Edu1 = {
-    name: "SD 01",
-    city: "Jakarta",
-    graduate: 2016
-};
+const Edu1 = [{
+        name: "SD 01",
+        city: "Jakarta",
+        graduate: 2016
+    },
+    {
+        name: "SMP 02",
+        city: "Jakarta",
+        graduate: 2019
+    },
 
-const Edu2 = new Object(); {
-    Edu2.name = "SD 02";
-    Edu2.city = "Jakarta";
-    Edu2.graduate = 2010;
-};
+    {
+        name: "SMA 03",
+        city: "Tangerang",
+    }
+];
+
+const Edu2 = [{
+        name: "SD 02",
+        city: "Jakarta",
+        graduate: 2010
+    },
+    {
+        name: "SMP 03",
+        city: "Bogor",
+        graduate: 2013
+    },
+    {
+        name: "SMA 01",
+        city: "Surabaya",
+        graduate: 2016
+    },
+    {
+        name: "Universitas Maju",
+        city: "Tangerang"
+    }
+];
 
 // favoriteRestaurant
 // Restoran tidak boleh duplikat
@@ -93,9 +119,9 @@ const firstUser = {
     age: arrAge[0],
     email: arrEmail[0],
     favoriteColor: [...setColMonica],
-    isHavePet: "Yes",
+    isHavePet: arrPet[0],
     education: Edu1,
-    favoriteRestaurant: [...setColWendy],
+    favoriteRestaurant: [...setResMonica],
 };
 
 const secondUser = {
@@ -104,7 +130,7 @@ const secondUser = {
     age: arrAge[1],
     email: arrEmail[1],
     favoriteColor: [...setColWendy],
-    isHavePet: "No",
+    isHavePet: arrPet[1],
     education: Edu2,
     favoriteRestaurant: [...setResWendy],
 };
